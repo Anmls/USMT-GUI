@@ -1,0 +1,9 @@
+C:\Users\idavidson\Dropbox\!Work\Visual Studio Projects\USMT GUI\USMT GUI\bin\Debug\USMT GUI.exe.config
+C:\Users\idavidson\Dropbox\!Work\Visual Studio Projects\USMT GUI\USMT GUI\bin\Debug\USMT GUI.exe
+C:\Users\idavidson\Dropbox\!Work\Visual Studio Projects\USMT GUI\USMT GUI\bin\Debug\USMT GUI.pdb
+C:\Users\idavidson\Dropbox\!Work\Visual Studio Projects\USMT GUI\USMT GUI\obj\Debug\USMT GUI.csprojResolveAssemblyReference.cache
+C:\Users\idavidson\Dropbox\!Work\Visual Studio Projects\USMT GUI\USMT GUI\obj\Debug\USMT_GUI.Form1.resources
+C:\Users\idavidson\Dropbox\!Work\Visual Studio Projects\USMT GUI\USMT GUI\obj\Debug\USMT_GUI.Properties.Resources.resources
+C:\Users\idavidson\Dropbox\!Work\Visual Studio Projects\USMT GUI\USMT GUI\obj\Debug\USMT GUI.csproj.GenerateResource.Cache
+C:\Users\idavidson\Dropbox\!Work\Visual Studio Projects\USMT GUI\USMT GUI\obj\Debug\USMT GUI.exe
+C:\Users\idavidson\Dropbox\!Work\Visual Studio Projects\USMT GUI\USMT GUI\obj\Debug\USMT GUI.pdb
