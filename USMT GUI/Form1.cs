@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Management;
 
 namespace USMT_GUI
 {
@@ -16,5 +17,23 @@ namespace USMT_GUI
         {
             InitializeComponent();
         }
+
+        private void ButtonSelectUser_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void ButtonExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void ButtonLocalDriveBrowse_Click(object sender, EventArgs e)
+        {
+            DialogResult result = folderBrowserDialog1.ShowDialog();
+            if (result == DialogResult.OK)
+                TextBoxLocalDrive.Text = folderBrowserDialog1.SelectedPath; 
+        }
+
     }
 }

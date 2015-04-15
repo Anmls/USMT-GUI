@@ -33,7 +33,6 @@
             this.RadioButtonBackup = new System.Windows.Forms.RadioButton();
             this.GroupBoxTarget = new System.Windows.Forms.GroupBox();
             this.TextBoxSpecificUser = new System.Windows.Forms.TextBox();
-            this.ButtonSelectUser = new System.Windows.Forms.Button();
             this.TextBoxRecentUsers = new System.Windows.Forms.TextBox();
             this.RadioButtonRecentUsers = new System.Windows.Forms.RadioButton();
             this.RadioButtonSpecificUser = new System.Windows.Forms.RadioButton();
@@ -44,6 +43,7 @@
             this.RadioButtonDefaultStore = new System.Windows.Forms.RadioButton();
             this.ButtonStart = new System.Windows.Forms.Button();
             this.ButtonExit = new System.Windows.Forms.Button();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.GroupBoxTask.SuspendLayout();
             this.GroupBoxTarget.SuspendLayout();
             this.GroupBoxMigrationStore.SuspendLayout();
@@ -78,14 +78,12 @@
             this.RadioButtonBackup.Name = "RadioButtonBackup";
             this.RadioButtonBackup.Size = new System.Drawing.Size(62, 17);
             this.RadioButtonBackup.TabIndex = 0;
-            this.RadioButtonBackup.TabStop = true;
             this.RadioButtonBackup.Text = "Backup";
             this.RadioButtonBackup.UseVisualStyleBackColor = true;
             // 
             // GroupBoxTarget
             // 
             this.GroupBoxTarget.Controls.Add(this.TextBoxSpecificUser);
-            this.GroupBoxTarget.Controls.Add(this.ButtonSelectUser);
             this.GroupBoxTarget.Controls.Add(this.TextBoxRecentUsers);
             this.GroupBoxTarget.Controls.Add(this.RadioButtonRecentUsers);
             this.GroupBoxTarget.Controls.Add(this.RadioButtonSpecificUser);
@@ -100,17 +98,8 @@
             // 
             this.TextBoxSpecificUser.Location = new System.Drawing.Point(94, 19);
             this.TextBoxSpecificUser.Name = "TextBoxSpecificUser";
-            this.TextBoxSpecificUser.Size = new System.Drawing.Size(84, 20);
+            this.TextBoxSpecificUser.Size = new System.Drawing.Size(157, 20);
             this.TextBoxSpecificUser.TabIndex = 2;
-            // 
-            // ButtonSelectUser
-            // 
-            this.ButtonSelectUser.Location = new System.Drawing.Point(176, 18);
-            this.ButtonSelectUser.Name = "ButtonSelectUser";
-            this.ButtonSelectUser.Size = new System.Drawing.Size(75, 22);
-            this.ButtonSelectUser.TabIndex = 4;
-            this.ButtonSelectUser.Text = "Select User";
-            this.ButtonSelectUser.UseVisualStyleBackColor = true;
             // 
             // TextBoxRecentUsers
             // 
@@ -133,6 +122,7 @@
             // RadioButtonSpecificUser
             // 
             this.RadioButtonSpecificUser.AutoSize = true;
+            this.RadioButtonSpecificUser.Checked = true;
             this.RadioButtonSpecificUser.Location = new System.Drawing.Point(7, 20);
             this.RadioButtonSpecificUser.Name = "RadioButtonSpecificUser";
             this.RadioButtonSpecificUser.Size = new System.Drawing.Size(91, 17);
@@ -169,6 +159,7 @@
             this.ButtonLocalDriveBrowse.TabIndex = 2;
             this.ButtonLocalDriveBrowse.Text = "Browse";
             this.ButtonLocalDriveBrowse.UseVisualStyleBackColor = true;
+            this.ButtonLocalDriveBrowse.Click += new System.EventHandler(this.ButtonLocalDriveBrowse_Click);
             // 
             // RadioButtonLocalDrive
             // 
@@ -210,6 +201,7 @@
             this.ButtonExit.TabIndex = 4;
             this.ButtonExit.Text = "Exit";
             this.ButtonExit.UseVisualStyleBackColor = true;
+            this.ButtonExit.Click += new System.EventHandler(this.ButtonExit_Click);
             // 
             // Form1
             // 
@@ -250,7 +242,7 @@
         private System.Windows.Forms.Button ButtonExit;
         private System.Windows.Forms.TextBox TextBoxLocalDrive;
         private System.Windows.Forms.Button ButtonLocalDriveBrowse;
-        private System.Windows.Forms.Button ButtonSelectUser;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
     }
 }
 
