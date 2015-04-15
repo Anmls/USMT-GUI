@@ -215,7 +215,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 199);
+            this.ClientSize = new System.Drawing.Size(367, 199);
             this.Controls.Add(this.ButtonExit);
             this.Controls.Add(this.ButtonStart);
             this.Controls.Add(this.GroupBoxMigrationStore);
