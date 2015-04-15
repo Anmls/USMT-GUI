@@ -1,0 +1,6 @@
+﻿2014-12-09 15:26:14, Info                  [0x000000] USMT Started at 2014/12/09:15:26:14.421[gle=0x000000b7]
+2014-12-09 15:26:14, Info                  [0x000000] Command line: \\box-ahs\mig\User State Migration Tool\amd64\usmtutils.exe[gle=0x000000b7]
+2014-12-09 15:26:14, Info                  [0x000000] USMTUTILS.EXE Version 6.3.9600.17237[gle=0x000000b7]
+2014-12-09 15:26:14, Info                  [0x000000] Administrator privileges are required to run this tool.[gle=0x000000b7]
+2014-12-09 15:26:14, Info                  [0x000000] UsmtUtils return code: 34[gle=0x000000b7]
+2014-12-09 15:26:14, Info                  [0x000000] USMT Completed at 2014/12/09:15:26:14.437[gle=0x000000b7]
