@@ -1,6 +1,6 @@
 ﻿namespace USMT_GUI
 {
-    partial class Form1
+    partial class USMT
     {
         /// <summary>
         /// Required designer variable.
@@ -44,6 +44,7 @@
             this.ButtonStart = new System.Windows.Forms.Button();
             this.ButtonExit = new System.Windows.Forms.Button();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.GroupBoxTask.SuspendLayout();
             this.GroupBoxTarget.SuspendLayout();
             this.GroupBoxMigrationStore.SuspendLayout();
@@ -67,29 +68,32 @@
             this.RadioButtonRestore.Name = "RadioButtonRestore";
             this.RadioButtonRestore.Size = new System.Drawing.Size(62, 17);
             this.RadioButtonRestore.TabIndex = 1;
-            this.RadioButtonRestore.TabStop = true;
             this.RadioButtonRestore.Text = "Restore";
             this.RadioButtonRestore.UseVisualStyleBackColor = true;
             // 
             // RadioButtonBackup
             // 
             this.RadioButtonBackup.AutoSize = true;
+            this.RadioButtonBackup.Checked = true;
             this.RadioButtonBackup.Location = new System.Drawing.Point(7, 20);
             this.RadioButtonBackup.Name = "RadioButtonBackup";
             this.RadioButtonBackup.Size = new System.Drawing.Size(62, 17);
             this.RadioButtonBackup.TabIndex = 0;
+            this.RadioButtonBackup.TabStop = true;
             this.RadioButtonBackup.Text = "Backup";
             this.RadioButtonBackup.UseVisualStyleBackColor = true;
             // 
             // GroupBoxTarget
             // 
+            this.GroupBoxTarget.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.GroupBoxTarget.Controls.Add(this.TextBoxSpecificUser);
             this.GroupBoxTarget.Controls.Add(this.TextBoxRecentUsers);
             this.GroupBoxTarget.Controls.Add(this.RadioButtonRecentUsers);
             this.GroupBoxTarget.Controls.Add(this.RadioButtonSpecificUser);
             this.GroupBoxTarget.Location = new System.Drawing.Point(93, 13);
             this.GroupBoxTarget.Name = "GroupBoxTarget";
-            this.GroupBoxTarget.Size = new System.Drawing.Size(261, 72);
+            this.GroupBoxTarget.Size = new System.Drawing.Size(292, 72);
             this.GroupBoxTarget.TabIndex = 1;
             this.GroupBoxTarget.TabStop = false;
             this.GroupBoxTarget.Text = "Target";
@@ -98,7 +102,7 @@
             // 
             this.TextBoxSpecificUser.Location = new System.Drawing.Point(94, 19);
             this.TextBoxSpecificUser.Name = "TextBoxSpecificUser";
-            this.TextBoxSpecificUser.Size = new System.Drawing.Size(157, 20);
+            this.TextBoxSpecificUser.Size = new System.Drawing.Size(118, 20);
             this.TextBoxSpecificUser.TabIndex = 2;
             // 
             // TextBoxRecentUsers
@@ -130,16 +134,19 @@
             this.RadioButtonSpecificUser.TabStop = true;
             this.RadioButtonSpecificUser.Text = "Specific User:";
             this.RadioButtonSpecificUser.UseVisualStyleBackColor = true;
+            this.RadioButtonSpecificUser.CheckedChanged += new System.EventHandler(this.RadioButtonSpecificUser_CheckedChanged);
             // 
             // GroupBoxMigrationStore
             // 
+            this.GroupBoxMigrationStore.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.GroupBoxMigrationStore.Controls.Add(this.TextBoxLocalDrive);
             this.GroupBoxMigrationStore.Controls.Add(this.ButtonLocalDriveBrowse);
             this.GroupBoxMigrationStore.Controls.Add(this.RadioButtonLocalDrive);
             this.GroupBoxMigrationStore.Controls.Add(this.RadioButtonDefaultStore);
             this.GroupBoxMigrationStore.Location = new System.Drawing.Point(13, 92);
             this.GroupBoxMigrationStore.Name = "GroupBoxMigrationStore";
-            this.GroupBoxMigrationStore.Size = new System.Drawing.Size(341, 72);
+            this.GroupBoxMigrationStore.Size = new System.Drawing.Size(372, 72);
             this.GroupBoxMigrationStore.TabIndex = 2;
             this.GroupBoxMigrationStore.TabStop = false;
             this.GroupBoxMigrationStore.Text = "Migration Store";
@@ -148,12 +155,12 @@
             // 
             this.TextBoxLocalDrive.Location = new System.Drawing.Point(88, 43);
             this.TextBoxLocalDrive.Name = "TextBoxLocalDrive";
-            this.TextBoxLocalDrive.Size = new System.Drawing.Size(170, 20);
+            this.TextBoxLocalDrive.Size = new System.Drawing.Size(131, 20);
             this.TextBoxLocalDrive.TabIndex = 3;
             // 
             // ButtonLocalDriveBrowse
             // 
-            this.ButtonLocalDriveBrowse.Location = new System.Drawing.Point(256, 42);
+            this.ButtonLocalDriveBrowse.Location = new System.Drawing.Point(217, 42);
             this.ButtonLocalDriveBrowse.Name = "ButtonLocalDriveBrowse";
             this.ButtonLocalDriveBrowse.Size = new System.Drawing.Size(75, 22);
             this.ButtonLocalDriveBrowse.TabIndex = 2;
@@ -186,16 +193,19 @@
             // 
             // ButtonStart
             // 
-            this.ButtonStart.Location = new System.Drawing.Point(197, 170);
+            this.ButtonStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.ButtonStart.Location = new System.Drawing.Point(228, 237);
             this.ButtonStart.Name = "ButtonStart";
             this.ButtonStart.Size = new System.Drawing.Size(75, 23);
             this.ButtonStart.TabIndex = 3;
             this.ButtonStart.Text = "Start";
             this.ButtonStart.UseVisualStyleBackColor = true;
+            this.ButtonStart.Click += new System.EventHandler(this.ButtonStart_Click);
             // 
             // ButtonExit
             // 
-            this.ButtonExit.Location = new System.Drawing.Point(279, 170);
+            this.ButtonExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.ButtonExit.Location = new System.Drawing.Point(310, 237);
             this.ButtonExit.Name = "ButtonExit";
             this.ButtonExit.Size = new System.Drawing.Size(75, 23);
             this.ButtonExit.TabIndex = 4;
@@ -203,17 +213,29 @@
             this.ButtonExit.UseVisualStyleBackColor = true;
             this.ButtonExit.Click += new System.EventHandler(this.ButtonExit_Click);
             // 
-            // Form1
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Location = new System.Drawing.Point(13, 170);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(372, 61);
+            this.textBox1.TabIndex = 5;
+            // 
+            // USMT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(367, 199);
+            this.ClientSize = new System.Drawing.Size(398, 266);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.GroupBoxMigrationStore);
             this.Controls.Add(this.ButtonExit);
             this.Controls.Add(this.ButtonStart);
-            this.Controls.Add(this.GroupBoxMigrationStore);
             this.Controls.Add(this.GroupBoxTarget);
             this.Controls.Add(this.GroupBoxTask);
-            this.Name = "Form1";
+            this.Name = "USMT";
             this.Text = "USMT";
             this.GroupBoxTask.ResumeLayout(false);
             this.GroupBoxTask.PerformLayout();
@@ -222,6 +244,7 @@
             this.GroupBoxMigrationStore.ResumeLayout(false);
             this.GroupBoxMigrationStore.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -243,6 +266,7 @@
         private System.Windows.Forms.TextBox TextBoxLocalDrive;
         private System.Windows.Forms.Button ButtonLocalDriveBrowse;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
