@@ -262,3 +262,9 @@ C:\Users\idavidson\Documents\GitHub\USMT-GUI\USMT GUI\obj\Debug\USMT_GUI.Propert
 C:\Users\idavidson\Documents\GitHub\USMT-GUI\USMT GUI\obj\Debug\USMT GUI.csproj.GenerateResource.Cache
 C:\Users\idavidson\Documents\GitHub\USMT-GUI\USMT GUI\obj\Debug\USMT GUI.exe
 C:\Users\idavidson\Documents\GitHub\USMT-GUI\USMT GUI\obj\Debug\USMT GUI.pdb
+C:\Users\dvnt\Documents\GitHub\USMT-GUI\USMT GUI\bin\Debug\USMT GUI.exe.config
+C:\Users\dvnt\Documents\GitHub\USMT-GUI\USMT GUI\obj\Debug\USMT GUI.exe
+C:\Users\dvnt\Documents\GitHub\USMT-GUI\USMT GUI\obj\Debug\USMT GUI.csprojResolveAssemblyReference.cache
+C:\Users\dvnt\Documents\GitHub\USMT-GUI\USMT GUI\obj\Debug\USMT_GUI.Properties.Resources.resources
+C:\Users\dvnt\Documents\GitHub\USMT-GUI\USMT GUI\obj\Debug\USMT_GUI.USMT.resources
+C:\Users\dvnt\Documents\GitHub\USMT-GUI\USMT GUI\obj\Debug\USMT GUI.csproj.GenerateResource.Cache
