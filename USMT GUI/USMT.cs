@@ -99,10 +99,8 @@ namespace USMT_GUI
 
         void _process_OutputDataReceived(object sender, DataReceivedEventArgs e)
         {
-            _output.Append(e.Data);
+            //_output.Append(e.Data);
         }
 
     }
 }
-
-Why is this so complicated?!
